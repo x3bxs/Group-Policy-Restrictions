@@ -44,26 +44,32 @@ The screenshots below show the complete process — from creating users to apply
 
 ---
 
-## ⚙️ Applying Policies
-Navigate to administrative template. Administrative template holds all the policies that can be resitrictied.
+## 🖥️ Applying Policies
+
+Navigate to **Administrative Templates** within the **Group Policy Editor**.  
+This section contains the full set of configurable policies that can be used to **restrict or customize user access**.
+
 <table>
   <tr>
-    <td><img width="500"  alt="Enabled Policy 1" src="https://github.com/user-attachments/assets/bf3d3832-d8a7-49be-9de1-d72fb94b9130" /></td>
-    <td><img width="1209"  alt="Enabled Policy 2" src="https://github.com/user-attachments/assets/4527d6b0-a557-48b7-85c0-a2ea1983a0c1" /></td>
+    <td><img width="500" alt="Administrative Template - Example 1" src="https://github.com/user-attachments/assets/bf3d3832-d8a7-49be-9de1-d72fb94b9130" /></td>
+    <td><img width="1209" alt="Administrative Template - Example 2" src="https://github.com/user-attachments/assets/4527d6b0-a557-48b7-85c0-a2ea1983a0c1" /></td>
   </tr>
 </table>
-After configuring restrictions, confirm that the policies are correctly applied by loging into the user (remoetly).
 
-----
+After applying the desired restrictions, **log in to the target user account** (either locally or remotely) to verify that the configured policies have taken effect.
+
+---
 
 ## 🧩 Summary
 
 - Created new user accounts within **Local Users and Groups**.  
-- Added **Group Policy Object (GPO)** snap-ins to manage user-specific restrictions.  
-- Verified policy enforcement through **gpresult**, **RSOP**, and **GPMC**.  
+- Added **Group Policy Object (GPO)** snap-ins to apply user-specific restrictions.  
+- Configured and tested policies within **Administrative Templates**.  
+- Verified enforcement using **gpresult**, **RSOP**, and **Group Policy Management Console (GPMC)**.  
 
-> 💡 *This setup is ideal for system administrators learning to manage and enforce local policies for multiple users.*
+> 💡 *This setup is ideal for system administrators learning to manage and enforce local policies across multiple users.*
 
 ---
 
 <div align="center"> 🖥️ Systems Management Projects 🖥️ </div>
+
