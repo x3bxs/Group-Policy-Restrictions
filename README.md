@@ -48,7 +48,7 @@ The screenshots below show the complete process — from creating users to apply
 
 Navigate to **Administrative Templates** within the **Group Policy Editor**.  
 This section contains the full set of configurable policies that can be used to **restrict or customize user access**.
-
+Screenshot below shows an example of **multiple policies** applies to the user.
 <table>
   <tr>
     <td><img width="500" alt="Administrative Template - Example 1" src="https://github.com/user-attachments/assets/bf3d3832-d8a7-49be-9de1-d72fb94b9130" /></td>
@@ -58,16 +58,15 @@ This section contains the full set of configurable policies that can be used to 
 
 After applying the desired restrictions, **log in to the target user account** (either locally or remotely) to verify that the configured policies have taken effect.
 
----
+----
 
-## 🧩 Summary
+## 🖥️ Summary
 
 - Created new user accounts within **Local Users and Groups**.  
 - Added **Group Policy Object (GPO)** snap-ins to apply user-specific restrictions.  
 - Configured and tested policies within **Administrative Templates**.  
-- Verified enforcement using **gpresult**, **RSOP**, and **Group Policy Management Console (GPMC)**.  
+- Verified enforcement either by loging into user or **Group Policy Management Console (GPMC)**.  
 
-> 💡 *This setup is ideal for system administrators learning to manage and enforce local policies across multiple users.*
 
 ---
 
