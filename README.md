@@ -1,12 +1,17 @@
 # 🧭 Group Policy Restrictions
 
-This repository demonstrates how to **create users** and apply **Group Policy restrictions** in a Windows Server environment.  
-The screenshots below show the full configuration process — from user creation to applied GPO results.
+This repository demonstrates how to **create local users** and apply **Group Policy restrictions** in a Windows Server (or Hyper-V) environment.  
+The screenshots below show the complete process — from creating users to applying and verifying GPO restrictions.
 
 ---
 
 ## 👤 Creating Users
-Add Computer Mangement as sanp-in --> Naviate to **Users** folder under **Local groups and Users** located in the *System Tool* ---> Right Clich & create new user.
+
+1. Open **MMC (Microsoft Management Console)**.  
+2. Select **File → Add/Remove Snap-in**.  
+3. Choose **Computer Management** and click **Add**.  
+4. Under **System Tools → Local Users and Groups → Users**, right-click and select **New User**.  
+
 <table>
   <tr>
     <td><img width="400" alt="Creating User - Step 1" src="https://github.com/user-attachments/assets/bfb7c023-be7b-40ca-a755-046ca8671634" /></td>
@@ -17,10 +22,12 @@ Add Computer Mangement as sanp-in --> Naviate to **Users** folder under **Local 
 
 ---
 
-## 🔒 Adding Local Group Policy Snap-In
+## 🔒 Adding the Local Group Policy Snap-In
 
-These screenshots show the **Group Policy settings** applied to restrict certain user permissions and access.
-Select & add Group Policy as sanp in --> Browse to specific user where **Group Policies** will be applied 
+1. Open **MMC** again and select **File → Add/Remove Snap-in**.  
+2. Choose **Group Policy Object Editor** and click **Add**.  
+3. Click **Browse**, select the specific user account you created earlier, and apply the snap-in.  
+4. Configure the **Group Policy settings** to apply restrictions for that user.
 
 <table>
   <tr>
@@ -28,7 +35,6 @@ Select & add Group Policy as sanp in --> Browse to specific user where **Group P
     <td><img width="350" alt="GPO Restriction 2" src="https://github.com/user-attachments/assets/68210f94-614e-4fbd-93db-accd545291ac" /></td>
     <td><img width="350" alt="GPO Restriction 3" src="https://github.com/user-attachments/assets/2f5f4cdf-7048-4fd3-90b4-992e41ea8bbe" /></td>
   </tr>
-  
   <tr>
     <td><img width="350" alt="GPO Restriction 4" src="https://github.com/user-attachments/assets/44296e2d-1097-4543-8fdc-a3a638c246ca" /></td>
     <td><img width="350" alt="GPO Restriction 5" src="https://github.com/user-attachments/assets/cf505ddb-afb4-42e8-ba7b-1c938ab3b03b" /></td>
@@ -38,28 +44,26 @@ Select & add Group Policy as sanp in --> Browse to specific user where **Group P
 
 ---
 
-## ⚙️ Verified Policies
-
-Below are screenshots showing the **enabled and enforced policies** after applying restrictions.
-
+## ⚙️ Applying Policies
+Navigate to administrative template. Administrative template holds all the policies that can be resitrictied.
 <table>
-    <tr>
-        <td>
-  <img width="457" height="297" alt="Enabled Policy 1" src="https://github.com/user-attachments/assets/bf3d3832-d8a7-49be-9de1-d72fb94b9130" /> </td>
- <td> <img width="1209" height="314" alt="Enabled Policy 2" src="https://github.com/user-attachments/assets/4527d6b0-a557-48b7-85c0-a2ea1983a0c1" /></td>
-    </tr>
+  <tr>
+    <td><img width="500"  alt="Enabled Policy 1" src="https://github.com/user-attachments/assets/bf3d3832-d8a7-49be-9de1-d72fb94b9130" /></td>
+    <td><img width="1209"  alt="Enabled Policy 2" src="https://github.com/user-attachments/assets/4527d6b0-a557-48b7-85c0-a2ea1983a0c1" /></td>
+  </tr>
 </table>
+After configuring restrictions, confirm that the policies are correctly applied by loging into the user (remoetly).
 
----
+----
 
 ## 🧩 Summary
 
-- Created new user accounts within **Active Directory Users and Computers (ADUC)**.  
-- Applied **Group Policy Objects (GPOs)** to restrict user capabilities.  
-- Verified applied GPOs via **gpresult** and Group Policy Management Console.  
+- Created new user accounts within **Local Users and Groups**.  
+- Added **Group Policy Object (GPO)** snap-ins to manage user-specific restrictions.  
+- Verified policy enforcement through **gpresult**, **RSOP**, and **GPMC**.  
 
-> 💡 *This setup is useful for system administrators learning how to manage user permissions through Group Policy.*
+> 💡 *This setup is ideal for system administrators learning to manage and enforce local policies for multiple users.*
 
 ---
-<div align="center"> 🖥️ Systems Management Projects 🖥️
-</div>
+
+<div align="center"> 🖥️ Systems Management Projects 🖥️ </div>
