@@ -28,5 +28,6 @@ user restrictions
 
 ----
 
+shows enabled policies.
 <img width="457" height="297" alt="image" src="https://github.com/user-attachments/assets/bf3d3832-d8a7-49be-9de1-d72fb94b9130" />
 <img width="1209" height="314" alt="image" src="https://github.com/user-attachments/assets/4527d6b0-a557-48b7-85c0-a2ea1983a0c1" />
