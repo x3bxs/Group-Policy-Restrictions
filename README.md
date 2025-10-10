@@ -6,7 +6,7 @@ The screenshots below show the full configuration process — from user creation
 ---
 
 ## 👤 Creating Users
-Add Computer Mangement as sanp-in --> Naviate to **Users** folder under **Local groups and Users** located in the *System Tool*
+Add Computer Mangement as sanp-in --> Naviate to **Users** folder under **Local groups and Users** located in the *System Tool* ---> Right Clich & create new user.
 <table>
   <tr>
     <td><img width="400" alt="Creating User - Step 1" src="https://github.com/user-attachments/assets/bfb7c023-be7b-40ca-a755-046ca8671634" /></td>
